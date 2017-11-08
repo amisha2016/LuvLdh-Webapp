@@ -41,7 +41,7 @@ def upload(request):
        'description': 'This is a longer description of the attachment',
        'picture': savedFilenameURL
     }
-    print attachment['link']
+    print (attachment['link'])
     status = graph.put_wall_post(msg, attachment)
     return HttpResponse("Check post on <a href='https://www.facebook.com/Song-126210538066873'>Song</a>")
 
